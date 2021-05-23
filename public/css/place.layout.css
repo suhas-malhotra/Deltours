@@ -1,0 +1,9 @@
+.heading {
+  margin-top: 50px;
+  text-align: center;
+  padding: 20px 0 10px 0;
+}
+
+.carousel img {
+  height: 70vh;
+}

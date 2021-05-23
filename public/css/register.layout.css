@@ -1,0 +1,24 @@
+@media screen and (max-width: 1000px) {
+  .login-card {
+    margin-right: 0px !important;
+  }
+}
+
+.login-card {
+  margin-top: 80px;
+  margin-right: 100px;
+}
+.login-card .right {
+  background-color: #ff82a9;
+}
+.login-card a {
+  color: white;
+}
+.login-card img {
+  width: 100%;
+}
+.login-card form h1 {
+  color: white;
+  font-weight: 800;
+  font-family: "Poppins";
+}

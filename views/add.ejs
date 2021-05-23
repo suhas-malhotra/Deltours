@@ -1,0 +1,112 @@
+<% layout('layouts/boilerplate')%>
+<section>
+  <div class="container">
+    <div class="row pt-3">
+      <div class="col-12">
+        <h1 class="mx-auto text-center">Add A Tourist Destination</h1>
+        <form
+          class="pt-5 mr-auto needs-validation"
+          action="/tours"
+          method="POST"
+          novalidate
+        >
+          <div class="form-group row">
+            <label for="title" class="col-sm-2 col-form-label"
+              >Place Name</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                id="title"
+                name="tour[title]"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="location" class="col-sm-2 col-form-label"
+              >Location</label
+            >
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                id="location"
+                name="tour[location]"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="image" class="col-sm-2 col-form-label">Image</label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                id="image"
+                name="tour[image1]"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="image" class="col-sm-2 col-form-label">Image</label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                id="image"
+                name="tour[image2]"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="image" class="col-sm-2 col-form-label">Image</label>
+            <div class="col-sm-10">
+              <input
+                type="text"
+                class="form-control"
+                id="image"
+                name="tour[image3]"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label"
+              >Information</label
+            >
+            <div class="col-sm-10">
+              <textarea
+                rows="10"
+                class="form-control"
+                name="tour[description]"
+                id="description"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="description" class="col-sm-2 col-form-label"
+              >Information</label
+            >
+            <div class="col-sm-10">
+              <textarea
+                rows="10"
+                class="form-control"
+                name="tour[description1]"
+                id="description"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <button class="btn w-100" type="submit">Submit form</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

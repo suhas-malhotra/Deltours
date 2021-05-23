@@ -1,0 +1,58 @@
+<% layout('layouts/boilerplate')%>
+<section class="login-card">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+        <img src="images/travel3.png" alt="" class="img-fluid" />
+      </div>
+      <div class="col-12 col-sm-12 col-md-12 col-lg-5 my-auto p-5 right">
+        <form action="/register" method="POST">
+          <h1>REGISTER</h1>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              aria-describedby="emailHelp"
+              name="name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+              name="email"
+            />
+            <small id="emailHelp" class="form-text"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+            />
+          </div>
+          <div class="form-group">
+            <label for="confirm">Confirm Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="confirm"
+              name="confirm"
+            />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

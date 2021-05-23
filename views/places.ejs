@@ -1,0 +1,33 @@
+<% layout('layouts/boilerplate')%>
+<!-- ---------- SEARCHBAR----------- -->
+<div class="container" style="margin-top: 75px">
+  <div class="row">
+    <div class="col-12 mt-3 mb-4">
+      <input
+        class="form-control form-control-lg element"
+        type="text"
+        placeholder="Search Tourist Places"
+        id="searchName"
+      />
+    </div>
+  </div>
+</div>
+
+<!-- ----------TOURIST BOXES---------- -->
+<div class="container-fluid">
+  <div class="row" id="searchresults"></div>
+  <div class="row" id="allresults">
+    <%for(let tour of tours){%>
+    <div class="col-xl-3 col-md-4 col-sm-6 col-12 mt-2 mb-4 wcard">
+      <div class="card mx-auto" style="width: 18rem">
+        <img src="<%= tour.image3 %>" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title"><%= tour.title %></h5>
+          <p class="card-text"><%= tour.location%></p>
+          <a href="tours/<%= tour._id %>" class="btn">Know More</a>
+        </div>
+      </div>
+    </div>
+    <%}%>
+  </div>
+</div>
